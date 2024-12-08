@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>עמוד תשלום</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/payment.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <a href="shoppingCart.html">
+            <button id="back">חזרה לעמוד הסל</button></a>
+        <h2>פרטי תשלום</h2>
+        <form id="payment-form">
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="first-name" class="form-label">שם פרטי:</label>
+                    <input type="text" class="form-control" id="first-name" name="first-name" required>
+                    שם משפחה:</label>
+                    <input type="text" class="form-control" id="last-name" name="last-name" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="address" class="form-label">כתובת:</label>
+                <input type="text" class="form-control" id="address" name="address" required>
+                  דירה:</label>
+                <input type="text" class="form-control" id="apartment" name="apartment">
+            </div>
+
+            <div class="form-group">
+                <label for="floor" class="form-label">קומה:</label>
+                <input type="text" class="form-control" id="floor" name="floor">
+                 עיר:</label>
+                <input type="text" class="form-control" id="city" name="city" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone" class="form-label">טלפון:</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">כתובת מייל:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="delivery" class="form-label">סוג משלוח:</label>
+                <select class="form-select" id="delivery" name="delivery" required>
+                    <option value="home">משלוח לבית</option>
+                    <option value="store">משלוח לחנות</option>
+                </select>
+            </div>
+
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
+                <label class="form-check-label" for="newsletter">קבלת ניוזלטרים:</label>
+            </div>
+
+            <div class="form-group">
+                <label for="comments" class="form-label">הערות:</label>
+                <textarea class="form-control" id="comments" name="comments"></textarea>
+            </div>
+
+            <h4>פרטי כרטיס אשראי</h4>
+            <div class="form-group">
+                <label for="cc-name" class="form-label">שם על הכרטיס</label>
+                <input type="text" class="form-control" id="cc-name" required>
+                <small class="text-muted">השם המלא כפי שמופיע על הכרטיס</small>
+            </div>
+
+            <div class="form-group">
+                <label for="cc-number" class="form-label">מספר כרטיס אשראי</label>
+                <input type="text" class="form-control" id="cc-number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cc-expiration" class="form-label">תוקף</label>
+                <input type="text" class="form-control" id="cc-expiration" required>
+                CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" required>
+            </div>
+
+        </form>
+    </div>
+    
+    <div class="summary-container">
+        <h2>סיכום הזמנה</h2>
+        <div id="order-summary"> </div>
+        <p id="shipping-cost">משלוח: 0 ש"ח</p>
+        <p id="total-cost">סה"כ לתשלום: 0 ש"ח</p>
+        <button type="submit" id="submit">המשך לתשלום</button>
+        </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/payment.js"></script>
+</body>
+
+</html>

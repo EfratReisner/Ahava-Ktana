@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מוצרים</title>
+    <link rel="stylesheet" href="../css/styleProduct.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="../images/לוגו אהבה קטנה.png" alt="לוגו">
+        <img id="icon" src="../icons/search.svg" alt="חיפוש">
+        <input type="search" id="btn_search" placeholder="חפשו מוצרים או קולקציות אחרונות">
+        <img id="icon2" src="../icons/user-regular.png" alt="משתמש">
+        <div id="cartContainer">
+            <img id="icon1" src="../icons/shopping_cart.png" alt="סל קניות" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <span id="numProducts">0</span>
+        </div>
+    </header>
+
+    <!-- תפריט קטגוריות -->
+    <div class="categories">
+        <a href="#products-container" class="aa" id="collections">קולקציות</a>&nbsp;&nbsp;
+        <a href="#products-container" class="aa" id="gift">מתנות</a>&nbsp;&nbsp;
+        <a href="#products-container" class="aa" id="stickers_name">מדבקות שם</a>&nbsp;&nbsp;
+        <a href="#products-container" class="aa" id="Door_signs">שלטים לדלת</a>&nbsp;&nbsp;
+        <a href="#products-container" class="aa" id="children">ילדים</a>&nbsp;&nbsp;
+        <a href="#products-container" class="aa" id="Workspace">לסביבת העבודה</a>&nbsp;&nbsp;
+        <a href="#products-container" class="aa" id="Home_Design">עיצוב הבית</a>&nbsp;&nbsp;
+        <a href="#products-container" class="aa" id="paper_products">מוצרי נייר</a>
+    </div>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+    <div id="productContainer" class="product-container">
+        <div id="showPicture" class="product-picture"></div>
+        <div id="detailProduct" class="product-details"></div>
+    </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">סל קניות&nbsp;&nbsp;</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="cartItems">
+                  <!-- המוצרים יופיעו כאן -->
+              </div>
+              <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">סגירה</button>
+                  <a href="../html/shoppingCart.html" class="btn btn-primary">מעבר לעמוד הסל</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/productsJS.js"></script>
+</body>
+</html>

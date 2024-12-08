@@ -1,0 +1,311 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: scroll;
+    direction: rtl;
+    color:rgb(141, 176, 136)
+}
+
+#logo {
+    width: 14vw;
+    height: 5.1vh;
+    margin-left: 2vw;}
+#icon {
+    width: 2vw;
+    height: 5.1vh;
+    margin-left: 1vw;
+    margin-right: 0.8vw }
+#icon2 {
+        width: 2vw;
+        height: 5.1vh;
+        margin-left: 1vw;
+        margin-right: 0.8vw
+     }
+#icon1 {
+    width: 3vw;
+    height: 5.1vh;
+    margin-left: 2vw }
+#help-icon {
+        position: fixed; 
+        bottom: 20px;
+        left: 20px; 
+        width: 50px; 
+        height: 50px; 
+        z-index: 1000;   }
+#help-icon:hover{
+        transform: scale(1.1);   }
+#chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#chat {
+    width: 50px;
+    height: 50px;
+}
+
+#chat-box {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    max-width: 90%;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    display: none; /* מוסתר כברירת מחדל */
+}
+
+#chat-header {
+    background: #2a5797;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#chat-content {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+#chat-messages {
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+#messageInput {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-bottom-left-radius: 10px;
+}
+
+#chat-input button {
+    background: #495df6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+#chat-input button:hover {
+    background: #0056b3;
+}
+
+
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;}
+
+.aa {
+    margin: 0.5vh 1vw;
+    padding: 0.1vh 0.1vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.3vh;
+    color: black;
+    text-decoration: none;
+    display: block;}
+
+#btn_search {
+    border: solid 1px rgb(191, 187, 187);
+    width: 60vw;
+    height: 7vh;}
+header {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;}
+#div1 {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    width: 8vw;
+    height: 40vh;
+    background-color: white;
+    margin-right: 19vw;
+    text-align: center;
+    display: none;
+    color: black;
+    padding-top: 5px;
+    position: absolute;
+    border: 1px solid #ccc; 
+    padding: 1px; 
+    z-index: 1000; }
+#div2 {
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        width: 10vw;
+        height: 57vh;
+        background-color: white;
+        margin-right: 25vw;
+        text-align: center;
+        display: none;
+        color: black;
+        padding-top: 5px;
+        position: absolute;
+        border: 1px solid #ccc; 
+        padding: 1px; 
+        z-index: 1000; }
+#picture{
+    margin-top: 5.5vh;
+    width: 100%;
+    height: 55vh;}
+#text{
+    text-align: center;
+    font-weight: 400;}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    padding: 20px; }
+.product {
+    flex: 0 1 calc(25% - 40px);
+    margin: 10px;
+}
+
+.cardProduct {
+    padding: 10px;
+}
+.cardImg {
+    width: 80%; 
+    height: auto; 
+}
+
+.cardBody {
+    padding: 10px;
+}
+
+.cardTitle {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.cardText {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+}
+
+.stars {
+    color: gold;
+    margin-right: 5px;
+}
+
+.reviewCount {
+    color: #555;
+}
+.row {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+}
+
+.product {
+    flex: 1 1 30%; 
+    box-sizing: border-box;
+    margin: 0 10px; 
+    text-align: center; 
+}
+
+.cardProduct {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.cardImg {
+    width: 100%;
+    height: auto;
+    max-width: 200px; 
+    max-height: 200px;
+    object-fit: cover; 
+}
+.cardImg:hover{
+    width: 100%;
+    height: auto; 
+    max-width: 220px;
+    max-height: 220px;
+    object-fit: cover; 
+}
+#nSite {
+    color: rgb(43, 255, 0); 
+    animation: changeColor 5s infinite alternate; 
+}
+
+@keyframes changeColor {
+    0% {
+        color: rgb(43, 255, 0); 
+    }
+    50% {
+        color: aqua;
+    }
+    100% {
+        color: rgb(255, 89, 0); 
+    }
+}
+.small-img {
+    width: 80px; 
+    height: 80px;
+    object-fit: cover; 
+}
+.btn {
+    width: 10vw;
+}
+#cartContainer {
+    position: relative;
+    display: inline-block;
+}
+
+#numProducts {
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    transform: translate(50%, -50%);
+    background-color: rgb(255, 0, 81);
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+.cart-item p {
+    margin: 0;
+    line-height: 1.2; /* מגדיר את המרחק בין השורות לצפוף יותר */
+}
+
+.cart-item p:not(:last-child) {
+    margin-bottom: 5px; /* מגדיר מרווח תחתון של 5 פיקסלים בין השורות */
+}
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 10px;
+}

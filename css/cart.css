@@ -1,0 +1,178 @@
+main {
+  text-align: center;
+  margin-top: 10vh;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end; /* מיישר את התוכן לסוף */
+  align-items: center;
+  width: 100%; /* משתרע על כל רוחב העמוד */
+  padding-right: 10px; /* מרחק מהקצה הימני של העמוד */
+  position: relative;
+}
+
+#logo {
+  margin-right: 10px; /* מרחק מהאייקון */
+}
+
+#acount {
+  width: 2vw;
+  height: 5.1vh;
+  margin-left: 0.6vw;
+  margin-right: 1vw;
+}
+
+#cartItems {
+  margin-top: 7vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 120px; /* גובה קבוע לכל פריט */
+  box-sizing: border-box;
+}
+
+
+.cart-item p {
+  margin: 0 10px;
+  flex: 1;
+  text-align: right;
+  height: 100%; /* גובה אחיד */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px; /* גודל קבוע לאזור הפרטים */
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column; /* הצבת הכפתורים אחד מעל השני */
+  align-items: center;
+  margin-left: 10px; /* מרחק מהכיתוב */
+  height: 100%;
+  justify-content: center;
+}
+
+.btn-group .btn {
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: 1.2em;
+  margin: 2px 0; /* מרחק קטן יותר בין הכפתורים */
+  color: black;
+}
+
+#custom-alert {
+  display: none;
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f0c2d0;
+  padding: 20px;
+  border: 3px solid #c0bfbf;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(51, 52, 52, 0.1);
+  z-index: 1000;
+}
+
+.custom-alert-content {
+  text-align: center;
+  font-size: 25px;
+}
+.total-price-container {
+text-align: center; /* מרכז את התוכן בתוך המיכל */
+margin-top: 20px; /* מרחק מהאלמנט הקודם */
+}
+
+.button-container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10px; /* מרחק מהמחיר הכולל */
+}
+
+.button {
+position: relative;
+transition: all 0.3s ease-in-out;
+box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+padding-block: 0.5rem;
+padding-inline: 1.25rem;
+background-color: rgb(75, 82, 86);
+border-radius: 9999px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+gap: 10px;
+font-weight: bold;
+border: 3px solid #ffffff4d;
+outline: none;
+overflow: hidden;
+font-size: 15px;
+/* הסרת המרחק השלילי */
+}
+
+.icon {
+width: 24px;
+height: 24px;
+transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+transform: scale(1.05);
+border-color: #fff9;
+}
+
+.button:hover .icon {
+transform: translate(4px);
+}
+
+.button:hover::before {
+animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+content: "";
+position: absolute;
+width: 100px;
+height: 100%;
+background-image: linear-gradient(
+  120deg,
+  rgba(255, 255, 255, 0) 30%,
+  rgba(255, 255, 255, 0.8),
+  rgba(255, 255, 255, 0) 70%
+);
+top: 0;
+left: -100px;
+opacity: 0.6;
+}
+
+@keyframes shine {
+0% {
+  left: -100px;
+}
+
+60% {
+  left: 100%;
+}
+
+to {
+  left: 100%;
+}
+}
+
+.no-underline {
+text-decoration: none; /* הסרת הקו התחתון */
+}
